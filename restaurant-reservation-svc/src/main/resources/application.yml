@@ -2,7 +2,7 @@ spring:
   application:
     name: restaurant-reservation-svc
   profiles:
-    active: ${SPRING_PROFILES_ACTIVE:dev}
+    active: ${SPRING_PROFILES_ACTIVE:prod}
   messages:
     basename: i18n/messages
     encoding: UTF-8
