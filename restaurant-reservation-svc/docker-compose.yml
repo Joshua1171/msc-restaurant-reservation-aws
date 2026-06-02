@@ -46,7 +46,7 @@ services:
       - AWS_ENDPOINT_URL=http://localstack:4566
       - DYNAMODB_TABLE_NAME=restaurant-reservations
       - SNS_TOPIC_ARN=arn:aws:sns:us-east-1:000000000000:restaurant-notifications
-      - COGNITO_ISSUER_URI=http://localstack:4566/us-east-1_local
+      - COGNITO_ISSUER_URI=https://cognito-idp.us-east-1.amazonaws.com/us-east-1_ZLhzcDygK
     depends_on:
       localstack:
         condition: service_healthy
