@@ -44,6 +44,8 @@ import java.util.List;
 public class ReservationController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ReservationController.class);
+
+    //sub -> subject, es el claim estandar para identificar al usuario autenticado en JWT
     private static final String JWT_CLAIM_SUB = "sub";
 
     private final ReservationService reservationService;
